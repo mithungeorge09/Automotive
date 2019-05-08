@@ -3,7 +3,7 @@
 int main()
 {
   int row, c, n, s;
- 
+ printf("This is going to print a triangle pattern")
   printf("Enter the number of rows in pyramid of stars you wish to see\n");
   scanf("%d", &n);
  
