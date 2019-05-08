@@ -1,12 +1,30 @@
 language: c
+
 sudo: false # only for faster builds
-compiler: 
- - clang
- - gcc
+
 script:
- - gcc -o mithungeorge mithungeorge.c 
- - ./mithungeorge 
- - gcc -o lavenya lavenya.c 
- - ./lavenya 
-  - gcc -o Antonette Antonette.c 
- - ./Antonette 
+
+  - clang -coverage -O0 Antonette.c -o Antonette
+
+  - ./Antonette
+
+  - gcov Antonette.c
+  
+    - clang -coverage -O0 mithungeorge.c -o mithungeorge
+
+  - ./mithungeorge
+
+  - gcov mithungeorge.c
+  
+    - clang -coverage -O0 lavenya.c -o lavenya
+
+  - ./lavenya
+
+  - gcov lavenya.c
+
+ 
+
+after_success:
+
+  - bash <(curl -s https://codecov.io/bash)
+  
