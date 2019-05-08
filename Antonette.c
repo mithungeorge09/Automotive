@@ -1,6 +1,3 @@
-// C program to print a Christmas tree
-// It is recommended is try it with a desktop
-// compiler like CodeBlocks.
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
