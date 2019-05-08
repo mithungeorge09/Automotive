@@ -3,7 +3,7 @@
 int main()
 {
   int row, c;
- printf("This is going to print a triangle pattern")
+ printf("This is going to print a triangle pattern");
   
   for (row = 1; row <= 5; row++)  // Loop to print rows
   {
