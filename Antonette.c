@@ -90,13 +90,13 @@ int main()
 	printf("\n*********MERRY CHRISTMAS*********\n\n");
 
 	// refresh loop
-	while (1) {
+
 		clrscr();
 		printTree(ht);
 
 		printLog(ht);
 		usleep(RefRate);
-	}
+
 
 	return 0;
 }
