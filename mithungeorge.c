@@ -1,5 +1,5 @@
 #include <stdio.h>
- 
+#include <stdint.h>
 int main()
 {
   int row, c, n, s;
