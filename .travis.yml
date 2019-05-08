@@ -4,5 +4,9 @@ compiler:
  - clang
  - gcc
 script:
- - gcc -o test test.c 
- - ./test 
+ - gcc -o mithungeorge mithungeorge.c 
+ - ./mithungeorge 
+ - gcc -o lavenya lavenya.c 
+ - ./lavenya 
+  - gcc -o Antonette Antonette.c 
+ - ./Antonette 
