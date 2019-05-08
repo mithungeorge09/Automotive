@@ -1,3 +1,4 @@
+// This program prints Hut Pattern
 #include<stdio.h>
 
 int main() {
