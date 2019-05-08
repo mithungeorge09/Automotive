@@ -2,16 +2,12 @@
 #include <stdint.h>
 int main()
 {
-  int row, c, n, s;
+  int row, c;
  printf("This is going to print a triangle pattern")
-  printf("Enter the number of rows in pyramid of stars you wish to see\n");
-  scanf("%d", &n);
- 
-  s = n;
- 
-  for (row = 1; row <= n; row++)  // Loop to print rows
+  
+  for (row = 1; row <= 5; row++)  // Loop to print rows
   {
-    for (c = 1; c < s; c++)  // Loop to print spaces in a row
+    for (c = 1; c < 5; c++)  // Loop to print spaces in a row
       printf(" ");
  
     s--;
